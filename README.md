@@ -5,7 +5,9 @@
 
 
  <h1>Seacher - Web Crawler and Search Script</h1>
-   ![searcher](https://github.com/secforumsnet/searcher/assets/143932328/706cd78b-f6e9-48e9-b481-d93e674fbde9)
+ 
+  ![Screenshot](https://github.com/secforumsnet/searcher/assets/143932328/706cd78b-f6e9-48e9-b481-d93e674fbde9)
+  
   <p>This Python script is designed for web crawling and searching for specific words on a website. It allows you to provide a starting URL and a list of words to search for. The script will crawl the website, search for the specified words, and display results in real-time.</p>
 
   <h2>Features</h2>
