@@ -2,6 +2,7 @@ import requests
 from bs4 import BeautifulSoup
 from colorama import init, Fore
 from urllib.parse import urlparse, urljoin
+import threading
 
 # Initialize colorama for colored text
 init(autoreset=True)
@@ -63,5 +64,11 @@ search_words = input("Enter the words to search for (comma-separated): ").split(
 parsed_url = urlparse(website_url)
 domain = parsed_url.netloc
 
-# Call the crawl_and_search function with user-provided values
-crawl_and_search(website_url, search_words, domain)
+# Create a thread for crawling and searching
+thread = threading.Thread(target=crawl_and_search, args=(website_url, search_words, domain))
+
+# Start the thread
+thread.start()
+
+# Wait for the thread to finish
+thread.join()
